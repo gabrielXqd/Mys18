@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Aniversário de 18 Anos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Meus 18 Anos</h1>
+                <p class="subtitle">Você está convidado para minha festa!</p>
+            </div>
+        </header>
+
+        <section class="info-section">
+            <div class="info-card">
+                <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                <h3>Data</h3>
+                <p>24 de Maio de 2025</p>
+            </div>
+            <div class="info-card">
+                <div class="icon"><i class="fas fa-clock"></i></div>
+                <h3>Horário</h3>
+                <p>12:00 às 21:00</p>
+            </div>
+            <div class="info-card">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Local</h3>
+                <p>Casa de festa com piscina</p>
+                <p>Avenida Merico Vespucio 120</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>Sobre a Festa</h2>
+            <p>Venha celebrar comigo este momento tão especial! Teremos música, comida deliciosa e muita diversão para comemorar meus 18 anos.</p>
+            <p><strong>Churrasco:</strong> Teremos um delicioso churrasco para todos os convidados!</p>
+            <p><strong>Bebidas:</strong> Disponibilizaremos refrigerantes, sucos e energéticos. Bebidas alcoólicas, cada convidado deverá trazer a sua.</p>
+            <p><strong>Traje:</strong> Roupa de banho e Roupa do seu estilo</p>
+        </section>
+
+        <section class="confirmation-section" id="confirmacao">
+            <h2>Confirme sua Presença</h2>
+            <p>Para confirmar sua presença na festa, clique no botão abaixo e preencha o formulário.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFVchjsaniqVRbL5UIhevhvsozdc74gNfRTV8lzSvjDmCO-w/viewform?usp=dialog" target="_blank" class="btn-confirm" style="display: inline-block; text-decoration: none; margin-top: 15px;">
+                <i class="fas fa-check-circle"></i> Confirmar Presença no Google Forms
+            </a>
+        </section>
+
+
+
+        <section class="countdown-section">
+            <h2>Contagem Regressiva</h2>
+            <div id="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Espero você na minha festa!</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/gapy.ntj?igsh=eWJzaDZodXJ3MDcw" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5531985538709" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="admin.html" class="social-icon admin-link" style="opacity: 0.3;" title="Área Administrativa"><i class="fas fa-lock"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal removido pois agora usamos o Google Forms para confirmação -->
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    
+    <!-- Configuração e scripts da aplicação -->
+    <script src="firebase-config.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
